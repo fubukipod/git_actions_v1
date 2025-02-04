@@ -27,6 +27,10 @@ jobs:
 
       - name: Run tests
         run: mvn test
+      
+      - name: Pull remote changes
+        run: |
+          git pull --rebase origin main
 
       - name: Commit and push changes
         run: |
