@@ -35,7 +35,7 @@ jobs:
           echo "Automated workflow run at $(date)" >> ci-run.log
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add ci-run.log
+          git add -f ci-run.log
           
           # If there's nothing new to commit, the next command will fail.
           git commit -m "Add timestamp: $(date)" || echo "Nothing to commit."
