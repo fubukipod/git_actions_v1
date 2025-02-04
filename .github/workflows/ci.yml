@@ -1,4 +1,4 @@
-name: Java CI and Manual Run
+name: CI Run
 
 on:
   push:
@@ -7,7 +7,6 @@ on:
 
 jobs:
   build-and-test:
-    # Explicitly request write permission for repository contents
     permissions:
       contents: write
 
